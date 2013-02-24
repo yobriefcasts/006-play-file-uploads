@@ -1,0 +1,31 @@
+
+@main {
+    <h1>Application Form</h1>
+    @helper.form(action = routes.Application.submit, 'enctype -> "multipart/form-data"){
+        <h2>Details</h2>
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" />
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" />
+        </div>
+        <div>
+            <label for="position">Position Applied For</label>
+            <input type="text" name="position" id="position" />
+        </div>
+        <h2>Attachments</h2>
+        <div>
+            <label for="coverletter">Cover Letter</label>
+            <input type="file" name="coverletter" id="coverletter" />
+        </div>
+        <div>
+            <label for="cv">CV</label>
+            <input type="file" name="cv" id="cv" />
+        </div>
+        <div>
+            <input type="submit" value="Apply for Position" />
+        </div>
+    }
+}
